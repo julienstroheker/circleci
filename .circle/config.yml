@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run:
           name: Greeting
-          command: echo Hello, world.
+          command: sh scripts/createCredentials.sh
       - run:
           name: Print the Current Time
           command: date
