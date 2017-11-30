@@ -11,7 +11,7 @@ jobs:
           command: sh scripts/createCredentials.sh
       - run:
           name: Export
-          command: echo export AZURE_AUTH_LOCATION=/tmp/credsINT.json >> $HOME/.circlerc
+          command: echo 'export AZURE_AUTH_LOCATION=${outputPathCredsfile}' >> $BASH_ENV
       - run:
           name: Test
           command: export
