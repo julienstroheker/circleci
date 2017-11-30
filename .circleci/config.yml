@@ -7,8 +7,11 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Greeting
+          name: Pre
           command: sh scripts/createCredentials.sh
       - run:
-          name: Print the Current Time
-          command: date
+          name: Export
+          command: export AZURE_AUTH_LOCATION=/tmp/credsINT.json
+      - run:
+          name: Test
+          command: export
