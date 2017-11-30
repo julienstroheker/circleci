@@ -12,5 +12,3 @@ cat <<EOF > /tmp/credsINT.json
   "managementEndpointUrl": "$managementEndpointUrl"
 }
 EOF
-
-cat /tmp/credsINT.json
