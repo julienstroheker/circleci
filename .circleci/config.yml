@@ -14,4 +14,4 @@ jobs:
           command: export AZURE_AUTH_LOCATION=/tmp/credsINT.json
       - run:
           name: Test
-          command: export
+          command: cat $AZURE_AUTH_LOCATION
