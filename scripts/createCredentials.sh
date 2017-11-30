@@ -1,4 +1,4 @@
-cat <<EOF > /tmp/credsINT.json
+cat <<EOF > ${outputPathCredsfile}
 {
   "clientId": "$clientId",
   "clientSecret": "$clientSecret",
